@@ -1,0 +1,17 @@
+
+Setting Up JDBC Data Sources
+
+
+Find the name of the file that contains the JDBC drivers. This file is provided by your database vendor. The name and location of this file differs for each system. If you do not know the name or location of this file, consult your database administrator.
+
+Specify the location of the drivers file in the MATLAB Sun Java classpath by adding this file's path to the matlabroot/toolbox/local/classpath.txt file.
+
+For example, use the following syntax to add a reference to a MySQL® JDBC drivers file, D:/mysql/mysql-connector-java-3.0-bin.jar, to classpath.txt: 
+D:/mysql/mysql-connector-java-3.0-bin.jar
+for this program use 
+D:\MATLAB\TugasAkhir\Connection\mysql-connector-java-5.1.13-bin.jar
+
+
+Restart the MATLAB session before you access the database.
+
+If the drivers file is not located where classpath.txt indicates, errors do not appear, but MATLAB does not establish a database connection. Make sure that you update classpath.txt with the correct location and file name for your drivers file if the path and/or name of this file changes. If a MATLAB session is running while you modify classpath.txt, be sure to restart it before you connect to the database.
